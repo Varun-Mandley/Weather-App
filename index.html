@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="check weather conditions">
+    <link rel="shortcut icon" href="./images/weather-icon.png" type="image/x-icon">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+<div class="wrap-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <h1>Weather</h1>
+                </header>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label for="city"></label>
+                <input type="text" placeholder="Enter City Name" required class="inp" id="city">
+                <button type="button" class="btn">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-t-6 col-tp-12 col-m-4 col-mp-12">
+                <h2 class="cityName">CITY</h2>
+                <h2 class="time shadow date">
+                    <span class="h">00</span><span> : </span><span class="m">00</span><span> : </span><span class="s">00</span><span class="meridian"></span>
+                </h2>
+            </div>
+            <div class="col-4 col-t-6 col-tp-12 mar col-m-4 col-mp-12">
+                <p class="deg"></p>
+            </div>
+            <div class="col-4 col-t-12 col-m-4 col-mp-12">
+                <div class="row">
+                    <div class="col-6 pad col-t-3 col-tp-6 col-mp-3">
+                        <p class="key">Low Temp</p>
+                        <p class="lowTemp value"></p>
+                    </div>
+                    <div class="col-6 pad col-t-3 col-tp-6 col-mp-3">
+                        <p class="key">High Temp</p>
+                        <p class="highTemp value"></p>
+                    </div>
+                    <div class="col-6 pad col-t-3 col-tp-6 col-mp-3">
+                        <p class="key">Latitude</p>
+                        <p class="lat value"></p>
+                    </div>
+                    <div class="col-6 pad col-t-3 col-tp-6 col-mp-3">
+                        <p class="key">Longitude</p>
+                        <p class="lon value"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-t-4 col-m-2 col-mp-4 mar">
+                <p class="shadow">COUNTRY</p>
+                <p class="count s"></p>
+            </div>
+            <div class="col-2 col-t-4 col-m-2 col-mp-4">
+                <p class="shadow">HUMIDITY</p>
+                <p class="humi s"></p>
+            </div>
+            <div class="col-2 col-t-4 col-m-2 col-mp-4">
+                <p class="shadow">PRESSURE</p>
+                <p class="press s"></p>
+            </div>
+            <div class="col-2 col-t-4 col-m-2 col-mp-4">
+                <p class="shadow">VISIBILITY</p>
+                <p class="visi s"></p>
+            </div>
+            <div class="col-2 col-t-4 col-m-2 col-mp-4 mar">
+                <p class="shadow">WIND</p>
+                <p class="wind s"></p>
+            </div>
+            <div class="col-2 col-t-4 col-m-2 col-mp-4">
+                <p class="shadow">DESCRIPTION</p>
+                <p class="desc s"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/javascript.js"></script>
+</body>
+</html>

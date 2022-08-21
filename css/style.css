@@ -1,0 +1,146 @@
+*,::after,::before {box-sizing: border-box;clear: both;margin: 0;}
+.container {width: 1200px;padding: 0px 15px;margin: auto;}
+button {cursor: pointer;}
+.row {display: flex;flex-flow: row wrap;margin: 0px -15px;}
+.row [class^="col-"] {flex: 0 1 auto;padding: 0px 15px;}
+.row .col-1 {flex-basis: 8.33%;}
+.row .col-2 {flex-basis: 16.66%;}
+.row .col-3 {flex-basis: 25%;}
+.row .col-4 {flex-basis: 33.33%;}
+.row .col-5 {flex-basis: 41.66%;}
+.row .col-6 {flex-basis: 50%;}
+.row .col-7 {flex-basis: 58.33%;}
+.row .col-8 {flex-basis: 66.66%;}
+.row .col-9 {flex-basis: 75%;}
+.row .col-10 {flex-basis: 83.33%;}
+.row .col-11 {flex-basis: 91.66%;}
+.row .col-12 {flex-basis: 100%;}
+body {
+    background:  rgb(175 219 236 / 30%);
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.clear {
+    background: url(../images/clear-sky.jpg) no-repeat center center/cover; 
+    height: 100vh;  
+}
+.haze {
+    background: url(../images/haze.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.overcastClouds {
+    background: url(../images/overcast-clouds.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.mist {
+    background: url(../images/mist.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.scattered {
+    background: url(../images/scattered-clouds.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.fewClouds {
+    background: url(../images/few-clouds.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.brokenClouds {
+    background: url(../images/broken-clouds.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.moderateRain {
+    background: url(../images/moderate-rain.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.lightIntensityShowerRain {
+    background: url(../images/light-intensity-shower-rain.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.smoke {
+    background: url(../images/smoke.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.default {
+    background:rgb(175 219 236 / 30%);;
+}
+ 
+/*wrap-1*/
+.wrap-1 header {text-align: center;margin: 0px 0px;font-size: 30px;background: hsl(240, 5%, 84%, 0.5);border-radius: 10px;}
+.wrap-1 header h1 {display: inline-block;margin: 5px;}
+/* Wrap-2 */
+.wrap-2 {margin-top: 10px;}
+.wrap-2 label {display: none;}
+.wrap-2 .inp {background: #d3d3d759;padding: 15px;border: none;font-size: 25px;text-align: center;display: block;margin: auto;}
+.wrap-2 button {margin: 10px auto;display: block;}
+.loader {border-radius: 50%;height: 100px;}
+.wrap-2 .btn {padding: 10px 35px;font-size: 20px;color: #000;}
+.wrap-2 .btn:hover {background-color: transparent;}
+/* wrap-3 */
+.shadow {color: #fff;text-shadow: 0px 0px 2px #000;}
+.wrap-3 {padding: 50px 0;}
+.wrap-3 .deg {font-size: 84px;text-align: center;text-shadow: 5px 5px 2px #464545;}
+.wrap-3 .cityName,.wrap-3 .time {font-size: 30px;text-align: center;}
+.wrap-3 .key{color: #000; font-weight: bold; }
+.wrap-3 .pad{ text-align: center;}
+.wrap-3 .pad p:last-child{margin: 10px;}
+.wrap-3 .value {text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;color: #fff;}
+/* wrap-4 */
+.wrap-4 p {text-align: center;font-size: 23px;margin: 10px;color: #000;font-weight: bold;border-bottom: solid 4px;}
+.wrap-4 p.s {font-size: 30px;text-shadow: 2px 4px 1px #000;border-bottom: none;font-weight: bold;color: #fff;}
+
+/* ipad landscape  */
+@media screen and (max-width:1220px){
+.container{width:960px}
+.row .col-t-3{flex-basis: 25%;}
+.row .col-t-4{flex-basis: 33.33%;}
+.row .col-t-6{flex-basis: 50%;}
+.row .col-t-12{flex-basis: 100%;}
+.wrap-4 .row {height: 300px;}
+table tr td{padding: 0px 30px;}
+.wrap-3 {padding: 40px 0;}
+.wrap-3 .key, .wrap-3 .value{font-size: 20px;}
+.wrap-3 .deg{font-size: 70px;}
+}
+
+/* ipad portrait */
+@media screen and (max-width:980px){
+.container{width: 760px;}
+.row .col-tp-6{flex-basis: 50%;}
+.row .col-tp-12{flex-basis: 100%;}
+.wrap-3 .deg{font-size: 100px;}
+.wrap-3 .mar{margin: 30px 0px;}
+}
+
+/* for mobile */
+@media screen and (max-width:767px){
+.container{width: 100%;}
+.wrap-1 header{font-size: 15px;margin-top: 5px;}
+.wrap-2 .inp{padding: 5px;}
+.wrap-2 .btn{padding: 7px 60px;font-size: 18px;}
+.row .col-m-4{flex-basis: 33.33%;}
+.row .col-m-2{flex-basis: 8.33%;}
+.row .col-m-3{flex-basis: 25%;}
+.row .col-m-6{flex-basis: 50%;}
+.wrap-3 .deg{font-size: 44px;}
+.wrap-3{padding: 10px 0px;}
+.wrap-3 .key, .wrap-3 .value {font-size: 15px;}
+.wrap-4 p{font-size: 19px; margin: 0px;}
+.wrap-4 p.s{font-size: 19px;}
+.wrap-4 .row {height: 100px;}
+.wrap-3 .cityName, .wrap-3 .time {font-size: 20px;}
+}
+
+/* for mobile portrait */
+@media screen and (max-width:460px){
+.container{width: 100%;}
+.row .col-mp-12{flex-basis: 100%;}
+.row .col-mp-3{flex-basis: 25%;}
+.row .col-mp-4{flex-basis: 33.33%;}
+.wrap-3 .cityName, .wrap-3 .time {font-size: 25px;}
+.wrap-3 .deg {font-size: 70px;}
+.wrap-4 p{font-size: 14px;}
+.wrap-4 .mar{margin-bottom: 50px;}
+.wrap-2 .inp {padding: 10px;margin-top: 30px;}
+.wrap-1 header{margin-top: 15px;}
+.wrap-3 .key, .wrap-3 .value {font-size: 14px;}
+.wrap-4 p.s {font-size: 22px;}   
+}
